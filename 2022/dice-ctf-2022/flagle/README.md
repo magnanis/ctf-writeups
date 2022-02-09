@@ -270,7 +270,7 @@ let temp1 = window[b](b[f - 1], 'int')();
 ```
 
 Our string is the name of a method in the window object. <br>
-We know that the function has atleast two parameters and that it should return another function whose name is 5 characters long. <br>
+We know that the method's identifier is 5 characters long, that it can take atleast two parameters and that it should return a function. <br>
 By dumping the window methods we find that `cwrap` is what we're looking for. <br>
 Here is the actual source code
 
