@@ -304,7 +304,7 @@ function cwrap(ident, returnType, argTypes, opts) {
 ```
 
 What `cwrap` does is retrieve a C function with the supplied identifier and return type.
-In our case it will return a function of type `int` and with an identifier taken from the string `cwrap` with index `[f-1]`, where f is our current guess (row). <br>
+In our case it will return a function of type `int` and with the identifier being a character taken from the string `cwrap` at index `[f-1]`, where f is our current guess (row). <br>
 Trying to input `cwrap` at every guess we find out that at the 4th time the word is validated.
 In fact at index 4 we have the letter `a` which returns this function found in the WebAssembly source.
 
